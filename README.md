@@ -129,20 +129,6 @@ Jan 2022 – Apr 2024  A.S. Computer Science            Weber State University  
 
 ---
 
-## GitHub Stats
+## Github Stats
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mythius&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9)
-&nbsp;&nbsp;
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mythius&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9)
-
-</div>
-
----
-
-<div align="center">
-
-*Built and self-hosted by its owner.*
-
-</div>
