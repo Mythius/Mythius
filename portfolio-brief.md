@@ -155,8 +155,9 @@ Each project card must display: title, description, tags (chips), GitHub link, l
 **Multiplayer Game Suite**
 - **Description:** Real-time multiplayer games using WebSockets for game state sync and room management. All playable on msouthwick.com.
 - **Live:** https://msouthwick.com (Games section)
-- **Includes:** Bomberman · Bananagrams · Checkers · Blokus · Asteroids
-- **GitHub repos:** https://github.com/Mythius/bomberman · https://github.com/Mythius/bananagrams · https://github.com/Mythius/checkers · https://github.com/Mythius/Blockus · https://github.com/Mythius/Asteroids
+- **Includes:** Enchanted Forest · Bananagrams · Checkers · Blokus · Asteroids
+- **GitHub repos:** https://github.com/Mythius/Enchanted-Forest · https://github.com/Mythius/bananagrams · https://github.com/Mythias/checkers · https://github.com/Mythius/Blockus · https://github.com/Mythius/Asteroids
+- **Live:** https://www.msouthwick.com/ef/
 - **Tags:** `WebSockets` `Multiplayer` `Real-Time` `Game Dev` `JavaScript` `Node.js` `Room Management`
 
 ---

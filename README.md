@@ -60,7 +60,7 @@ When I'm not at work, I'm self-hosting things I could pay someone else to host �
 | Project | Description | Links |
 |---|---|---|
 | **Chess + Minimax Bot** | Fully playable chess in the browser with a bot hand-rolled in **C++**, searching 4 moves deep via minimax. Rare for a web developer. | [GitHub](https://github.com/Mythius/Chess) · [Play](https://www.msouthwick.com/chess/) |
-| **Multiplayer Game Suite** | Real-time multiplayer games over WebSockets: Bomberman, Bananagrams, Checkers, Blokus, Asteroids. | [Bomberman](https://github.com/Mythius/bomberman) · [Bananagrams](https://github.com/Mythius/bananagrams) · [Checkers](https://github.com/Mythius/checkers) · [Blokus](https://github.com/Mythius/Blockus) · [Asteroids](https://github.com/Mythius/Asteroids) |
+| **Multiplayer Game Suite** | Real-time multiplayer games over WebSockets: Enchanted Forest, Bananagrams, Checkers, Blokus, Asteroids. | [Enchanted Forest](https://github.com/Mythius/Enchanted-Forest) · [Play](https://www.msouthwick.com/ef/) · [Bananagrams](https://github.com/Mythius/bananagrams) · [Checkers](https://github.com/Mythius/checkers) · [Blokus](https://github.com/Mythius/Blockus) · [Asteroids](https://github.com/Mythius/Asteroids) |
 | **ASCII Camera** | Live webcam feed rendered as real-time ASCII art via canvas pixel manipulation. | [GitHub](https://github.com/Mythius/asciicamera) |
 | **JS Animation Engine** | Lightweight animation library for HTML5 Canvas, reused across game and creative projects. | [GitHub](https://github.com/Mythius/Animations) |
 

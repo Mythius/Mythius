@@ -136,11 +136,11 @@
   {
     "id": "multiplayer-games",
     "title": "Multiplayer Game Suite",
-    "description": "Real-time multiplayer games using WebSockets for game state sync and room management: Bomberman, Bananagrams, Checkers, Blokus, Asteroids.",
+    "description": "Real-time multiplayer games using WebSockets for game state sync and room management: Enchanted Forest, Bananagrams, Checkers, Blokus, Asteroids.",
     "category": "game",
     "tags": ["WebSockets", "Multiplayer", "Real-Time", "Game Dev", "JavaScript", "Node.js", "Room Management"],
-    "github": "https://github.com/Mythius/bomberman",
-    "live": "https://msouthwick.com",
+    "github": "https://github.com/Mythius/Enchanted-Forest",
+    "live": "https://www.msouthwick.com/ef/",
     "featured": false,
     "highlight": null
   },
