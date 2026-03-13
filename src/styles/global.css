@@ -303,13 +303,17 @@ body {
   display: flex;
 }
 
+.hamburger-btn {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .desktop-nav {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 769px) {
   .hamburger-btn {
-    display: none;
+    display: none !important;
   }
 }
