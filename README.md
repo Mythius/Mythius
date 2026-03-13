@@ -4,7 +4,7 @@
 
 *Build once. Deploy everywhere. Keep it simple.*
 
-![Portfolio](https://msouthwick.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-msouthwick.com-0d1117?style=for-the-badge&logo=googlechrome&logoColor=38bdf8)](https://msouthwick.com)
 [![Resume](https://img.shields.io/badge/Resume-PDF-0d1117?style=for-the-badge&logo=adobeacrobatreader&logoColor=38bdf8)](https://msouthwick.com/Matthias-Southwick-Resume.pdf)
 [![Email](https://img.shields.io/badge/Email-southwickmatthias%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=38bdf8)](mailto:southwickmatthias@gmail.com)
 
