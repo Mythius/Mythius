@@ -1,0 +1,134 @@
+---
+const values = [
+  {
+    icon: '🔓',
+    name: 'Free & Open Source First',
+    tagline: 'Prefer free APIs and self-hostable tools over paid lock-in',
+  },
+  {
+    icon: '🖥️',
+    name: 'Self-Host When It Makes Sense',
+    tagline: 'Own your stack, own your data',
+  },
+  {
+    icon: '♻️',
+    name: 'Code Once, Reuse Everywhere',
+    tagline: 'Boilerplates, libs, and pipelines — write it right the first time',
+  },
+  {
+    icon: '✦',
+    name: 'Simplicity Is the UX',
+    tagline: 'If you need training, the design failed',
+  },
+  {
+    icon: '🔒',
+    name: 'Security Without Friction',
+    tagline: 'OAuth over passwords, public/private endpoint separation always',
+  },
+  {
+    icon: '🗄️',
+    name: 'High-Quality Data',
+    tagline: 'Clean schemas, clean migrations, accessible but never messy',
+  },
+  {
+    icon: '⚡',
+    name: 'AI as a Multiplier',
+    tagline: 'Claude Code to iterate fast; AI amplifies craft, doesn\'t replace it',
+  },
+  {
+    icon: '📊',
+    name: 'Data-Informed, Not Data-Driven',
+    tagline: 'Data surfaces truth — people make decisions. Dashboards should empower judgment, not replace it',
+  },
+];
+---
+
+<section
+  id="philosophy"
+  style="
+    padding: 5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  "
+>
+  <div style="margin-bottom: 3rem;">
+    <span class="section-label">How I Build</span>
+    <h2 style="
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      font-weight: 700;
+      margin: 0.5rem 0 0.75rem;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+    ">
+      Philosophy
+    </h2>
+    <p style="
+      color: var(--color-muted);
+      font-size: 1rem;
+      margin: 0;
+      max-width: 540px;
+    ">
+      These aren't buzzwords — they're the decisions that show up in every project.
+    </p>
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  " class="philosophy-grid">
+    {values.map((v) => (
+      <div style="
+        background: var(--color-card);
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: border-color 0.2s, transform 0.2s;
+      " class="philosophy-card">
+        <div style="
+          font-size: 1.75rem;
+          margin-bottom: 0.75rem;
+          line-height: 1;
+        ">
+          {v.icon}
+        </div>
+        <h3 style="
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--color-text);
+          margin: 0 0 0.4rem;
+          line-height: 1.3;
+        ">
+          {v.name}
+        </h3>
+        <p style="
+          font-size: 0.82rem;
+          color: var(--color-muted);
+          margin: 0;
+          line-height: 1.5;
+        ">
+          {v.tagline}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .philosophy-card:hover {
+    border-color: rgba(0, 212, 170, 0.3);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 1024px) {
+    .philosophy-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .philosophy-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+</style>

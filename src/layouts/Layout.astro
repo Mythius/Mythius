@@ -1,0 +1,154 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Matthias Southwick — Full-Stack Software Engineer',
+  description = 'Full-Stack Software Engineer based in Provo, Utah. Building platforms, dev tools, and games. Build once. Deploy everywhere. Keep it simple.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Matthias Southwick" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- Sticky Navigation -->
+    <nav id="main-nav" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(15, 17, 23, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      transition: border-color 0.3s;
+    ">
+      <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+        <!-- Logo / Name -->
+        <a href="#" style="
+          font-family: var(--font-mono);
+          font-size: 0.9rem;
+          font-weight: 500;
+          color: var(--color-accent);
+          text-decoration: none;
+          letter-spacing: 0.02em;
+        ">
+          ms<span style="color: var(--color-muted);">outhwick</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <div class="desktop-nav" style="display: flex; align-items: center; gap: 2rem;">
+          <a href="#philosophy" class="nav-link">Philosophy</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          class="hamburger-btn"
+          id="hamburger"
+          aria-label="Toggle menu"
+          style="
+            background: none;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 0.375rem 0.5rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+          "
+        >
+          <span style="display: block; width: 18px; height: 2px; background: var(--color-text); border-radius: 1px;"></span>
+          <span style="display: block; width: 18px; height: 2px; background: var(--color-text); border-radius: 1px;"></span>
+          <span style="display: block; width: 18px; height: 2px; background: var(--color-text); border-radius: 1px;"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu"
+        style="
+          background: var(--color-card);
+          border-top: 1px solid var(--color-border);
+          padding: 1rem 1.5rem;
+          flex-direction: column;
+          gap: 0.75rem;
+        "
+      >
+        <a href="#philosophy" class="nav-link" style="font-size: 1rem;">Philosophy</a>
+        <a href="#projects" class="nav-link" style="font-size: 1rem;">Projects</a>
+        <a href="#experience" class="nav-link" style="font-size: 1rem;">Experience</a>
+        <a href="#skills" class="nav-link" style="font-size: 1rem;">Skills</a>
+        <a href="#contact" class="nav-link" style="font-size: 1rem;">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 60px;">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer style="
+      border-top: 1px solid var(--color-border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--color-muted);
+      font-size: 0.85rem;
+    ">
+      <p style="margin: 0;">Built and self-hosted by its owner.</p>
+    </footer>
+
+    <script>
+      // Hamburger toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('open');
+      });
+
+      // Close mobile menu on link click
+      mobileMenu?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+---
+const skillGroups = [
+  {
+    label: 'Languages',
+    skills: ['JavaScript', 'TypeScript', 'SQL', 'Python', 'Java', 'C++'],
+  },
+  {
+    label: 'Frontend',
+    skills: ['React', 'HTML', 'CSS', 'Canvas API'],
+  },
+  {
+    label: 'Backend',
+    skills: ['Node.js', 'Express', 'Prisma', 'FFmpeg'],
+  },
+  {
+    label: 'Databases',
+    skills: ['PostgreSQL', 'MySQL', 'Oracle DB', 'MongoDB', 'AWS DynamoDB'],
+  },
+  {
+    label: 'Cloud / DevOps',
+    skills: ['AWS Fargate', 'ECS', 'Lambda', 'SQS', 'API Gateway', 'Docker', 'NGINX', 'Linux'],
+  },
+  {
+    label: 'Integrations',
+    skills: [
+      'Google Drive API',
+      'Google Slides API',
+      'Google Sheets / Apps Script',
+      'Microsoft Auth',
+      'Amazon Alexa',
+    ],
+  },
+  {
+    label: 'Tools',
+    skills: ['Git', 'GitHub Actions', 'Claude Code', 'Tableau'],
+  },
+];
+---
+
+<section
+  id="skills"
+  style="
+    padding: 5rem 1.5rem;
+    background: rgba(26, 31, 46, 0.3);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  "
+>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="margin-bottom: 3rem;">
+      <span class="section-label">Technical Stack</span>
+      <h2 style="
+        font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+        font-weight: 700;
+        margin: 0.5rem 0 0.75rem;
+        color: var(--color-text);
+        letter-spacing: -0.01em;
+      ">
+        Skills
+      </h2>
+      <p style="color: var(--color-muted); font-size: 1rem; margin: 0; max-width: 540px;">
+        The tools I reach for — and the ones I've shipped to production.
+      </p>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    ">
+      {skillGroups.map((group) => (
+        <div style="
+          display: flex;
+          gap: 1.25rem;
+          align-items: flex-start;
+        " class="skill-row">
+          <div style="
+            min-width: 130px;
+            flex-shrink: 0;
+          " class="skill-label-col">
+            <span style="
+              font-family: var(--font-mono);
+              font-size: 0.72rem;
+              font-weight: 500;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: var(--color-muted);
+            ">
+              {group.label}
+            </span>
+          </div>
+          <div style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding-top: 0.05rem;
+          ">
+            {group.skills.map((skill) => (
+              <span class="skill-chip">{skill}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 600px) {
+    .skill-row {
+      flex-direction: column !important;
+      gap: 0.6rem !important;
+    }
+    .skill-label-col {
+      min-width: unset !important;
+    }
+  }
+</style>

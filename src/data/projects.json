@@ -1,0 +1,191 @@
+[
+  {
+    "id": "admishn",
+    "title": "Admishn — Admissions CRM",
+    "description": "Web platform for schools to manage student applications end-to-end, with real-time student progress tracking, built-in mail merge, and automated email workflows. Sold to Davis School District.",
+    "category": "platform",
+    "tags": ["SaaS", "CRM", "Mail Merge", "Automated Emails", "PostgreSQL", "Node.js", "React", "Co-Founded"],
+    "github": null,
+    "githubLabel": "Commercial",
+    "live": "https://admishn.com",
+    "featured": true,
+    "highlight": "⭐ Sold to Davis School District"
+  },
+  {
+    "id": "videostream",
+    "title": "MatthiasTV",
+    "description": "Full self-hosted media streaming platform with browser playback, a native Roku TV app (BrightScript), and a cross-platform Electron desktop app. Uses FFmpeg for video transcoding. No subscription fees, no third-party services.",
+    "category": "platform",
+    "tags": ["Self-Hosted", "Open Source", "FFmpeg", "Roku", "BrightScript", "Electron", "Node.js", "Video Streaming", "Cross-Platform", "Docker"],
+    "github": "https://github.com/Mythius/videostream",
+    "live": null,
+    "featured": true,
+    "highlight": "2 ⭐ · 1 fork · 144 commits · v1.0 released Nov 2025"
+  },
+  {
+    "id": "mentors-reports",
+    "title": "Mentors Global Reports Dashboard",
+    "description": "Professional reporting and data visibility platform with a Google Docs–style editing experience and role-based permissions. Used across departments in multiple countries at Mentors International.",
+    "category": "platform",
+    "tags": ["Professional", "Dashboards", "Permissions", "React", "Node.js", "PostgreSQL", "AWS", "Docker", "NGINX"],
+    "github": null,
+    "githubLabel": "Mentors International",
+    "live": "https://reports.mentorsglobal.org",
+    "featured": false,
+    "highlight": "⭐ Production system · Multi-country deployment"
+  },
+  {
+    "id": "pixelai",
+    "title": "PixelAI — Image Processing & AI Studio",
+    "description": "Unified platform for image processing, AI model training, and AI image generation. Demonstrates the complete pipeline from raw input through model training to generated output.",
+    "category": "platform",
+    "tags": ["AI", "Image Processing", "Model Training", "Image Generation", "Canvas API", "JavaScript", "Self-Hosted"],
+    "github": null,
+    "live": "https://pixelai.msouthwick.com",
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "api-lib",
+    "title": "api-lib — Express API Boilerplate",
+    "description": "Opinionated Express boilerplate enforcing separation of public vs. private endpoints with Google and Microsoft OAuth baked in from the start. Secure by default — no password management, no account complexity.",
+    "category": "devtool",
+    "tags": ["Open Source", "Boilerplate", "Express", "OAuth", "Google Auth", "Microsoft Auth", "Node.js", "TypeScript", "Security", "Reusable"],
+    "github": "https://github.com/Mythius/api-lib",
+    "live": null,
+    "featured": true,
+    "highlight": "\"Code Once, Reuse Everywhere\""
+  },
+  {
+    "id": "online-explorer",
+    "title": "Online Explorer — Self-Hosted File Manager",
+    "description": "Self-hosted file explorer web app. Browse, preview (images, video, audio, PDFs, code), and download files from any server directory. Google/Microsoft OAuth with per-user access control and email-based access requests.",
+    "category": "devtool",
+    "tags": ["Self-Hosted", "Open Source", "File Sharing", "Google Auth", "Microsoft Auth", "OAuth", "Node.js", "Access Control", "ZIP Download", "Mobile-Friendly"],
+    "github": "https://github.com/Mythius/online-explorer",
+    "live": null,
+    "featured": true,
+    "highlight": null
+  },
+  {
+    "id": "template-websites",
+    "title": "TemplateWebsites — Google Sheets CMS",
+    "description": "Deploy and manage live websites entirely from a Google Sheet. A shell script provisions a new NGINX site, and content syncs automatically from Google Drive. Currently powers four live sites — all content-managed without touching code.",
+    "category": "devtool",
+    "tags": ["Google Sheets", "Google Drive", "Apps Script", "CMS", "NGINX", "Shell", "Raspberry Pi", "Self-Hosted", "No-Code Frontend", "Server-Side Rendering"],
+    "github": "https://github.com/Mythius/TemplateWebsites",
+    "live": "https://profile.msouthwick.com",
+    "featured": false,
+    "highlight": "\"Simplicity Is the UX\" + \"Free APIs First\""
+  },
+  {
+    "id": "cicd-pipelines",
+    "title": "CI/CD Pipeline Templates",
+    "description": "GitHub Actions pipelines for deploying containerized apps to AWS Fargate, ECS, and local Linux servers. Reusable across projects, battle-tested in production.",
+    "category": "devtool",
+    "tags": ["GitHub Actions", "AWS Fargate", "ECS", "Docker", "NGINX", "Linux", "DevOps", "CI/CD", "Reusable"],
+    "github": null,
+    "live": null,
+    "featured": false,
+    "highlight": "\"Code Once, Reuse Everywhere\""
+  },
+  {
+    "id": "pdf-certs",
+    "title": "Google Slides PDF Certificate Generator",
+    "description": "Uses the Google Slides API to programmatically generate and export personalized PDF certificates at scale. Zero manual design work per certificate.",
+    "category": "devtool",
+    "tags": ["Google Slides API", "PDF Generation", "Automation", "JavaScript", "Google APIs"],
+    "github": null,
+    "live": null,
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "db-migration",
+    "title": "Database Design & Migration",
+    "description": "Designed the schema for a major production system overhaul and led migration from a legacy database. Emphasis on clean data architecture and zero data loss.",
+    "category": "devtool",
+    "tags": ["PostgreSQL", "Database Design", "Data Migration", "SQL", "AWS"],
+    "github": null,
+    "live": null,
+    "featured": false,
+    "highlight": "\"High-Quality Data\""
+  },
+  {
+    "id": "family-registry",
+    "title": "Family Registry",
+    "description": "Private family app where any family member signs in with Google to access a shared family tree and contact book. Designed to need zero explanation — you log in, it works.",
+    "category": "webapp",
+    "tags": ["Google Auth", "Family Tree", "Contact Book", "Private App", "Node.js", "Self-Hosted"],
+    "github": null,
+    "live": "https://family.msouthwick.com",
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "chess",
+    "title": "Chess + Minimax Bot",
+    "description": "Fully playable chess in the browser with complete rules, checkmate puzzles, and a bot built from scratch using the minimax algorithm searching 4 moves deep. Engine written in C++ and served via Node.js.",
+    "category": "game",
+    "tags": ["Chess", "C++", "Minimax Algorithm", "Game AI", "Node.js", "JavaScript", "HTML5", "Puzzles"],
+    "github": "https://github.com/Mythius/Chess",
+    "live": "https://www.msouthwick.com/chess/",
+    "featured": true,
+    "highlight": "⭐ Hand-rolled AI engine in C++ — rare for a web developer"
+  },
+  {
+    "id": "multiplayer-games",
+    "title": "Multiplayer Game Suite",
+    "description": "Real-time multiplayer games using WebSockets for game state sync and room management: Bomberman, Bananagrams, Checkers, Blokus, Asteroids.",
+    "category": "game",
+    "tags": ["WebSockets", "Multiplayer", "Real-Time", "Game Dev", "JavaScript", "Node.js", "Room Management"],
+    "github": "https://github.com/Mythius/bomberman",
+    "live": "https://msouthwick.com",
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "ascii-camera",
+    "title": "ASCII Camera",
+    "description": "Live webcam feed rendered as real-time ASCII art in the browser via canvas pixel manipulation.",
+    "category": "game",
+    "tags": ["Canvas API", "Image Processing", "JavaScript", "HTML5", "Creative"],
+    "github": "https://github.com/Mythius/asciicamera",
+    "live": null,
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "animation-engine",
+    "title": "JS Animation Engine",
+    "description": "Lightweight animation-making software for HTML5 Canvas. Reusable library used across game and creative projects.",
+    "category": "game",
+    "tags": ["Canvas API", "Animation", "Library", "JavaScript", "Reusable"],
+    "github": "https://github.com/Mythius/Animations",
+    "live": null,
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "robotics",
+    "title": "Raspberry Pi Robotics",
+    "description": "Integrated web software with Raspberry Pi hardware for robotics projects. Bridges server-side code with physical computing.",
+    "category": "iot",
+    "tags": ["Raspberry Pi", "Robotics", "IoT", "Hardware", "Python", "Self-Hosted"],
+    "github": null,
+    "live": null,
+    "featured": false,
+    "highlight": null
+  },
+  {
+    "id": "alexa",
+    "title": "Amazon Alexa Integration",
+    "description": "Built Alexa skills for voice-controlled IoT devices and home automation.",
+    "category": "iot",
+    "tags": ["Alexa", "IoT", "Voice Interface", "AWS Lambda", "AWS"],
+    "github": null,
+    "live": null,
+    "featured": false,
+    "highlight": null
+  }
+]

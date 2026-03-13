@@ -1,0 +1,238 @@
+---
+const professional = [
+  {
+    period: 'Apr 2025 – Present',
+    role: 'Co-Founder & Software Engineer',
+    org: 'Admishn Software',
+    notes: 'Sold to Davis School District',
+    type: 'professional',
+  },
+  {
+    period: 'Jan 2024 – Present',
+    role: 'Software Engineer',
+    org: 'Mentors International',
+    notes: '8+ full-stack tools, AWS, production Linux',
+    type: 'professional',
+  },
+  {
+    period: 'Apr 2023 – Jan 2024',
+    role: 'Data Analyst',
+    org: 'Weber State University',
+    notes: 'Advanced SQL, Tableau, open-source data viz',
+    type: 'professional',
+  },
+];
+
+const education = [
+  {
+    period: 'Aug 2024 – Apr 2026',
+    role: 'B.S. Computer Science',
+    org: 'Brigham Young University',
+    notes: 'Current student',
+    type: 'education',
+  },
+  {
+    period: 'Jan 2022 – Apr 2024',
+    role: 'A.S. Computer Science',
+    org: 'Weber State University',
+    notes: 'Graduated',
+    type: 'education',
+  },
+];
+
+// Merge and sort (newest first by approximating start dates)
+const timelineOrder = [
+  professional[0],
+  education[0],
+  professional[1],
+  professional[2],
+  education[1],
+];
+
+const callouts = [
+  'Production Linux + AWS (Fargate, ECS, Docker)',
+  'Designed & migrated a multi-country production database',
+  'Set up SCRUM/Agile on a remote international team (EN/ES)',
+  'Sold software commercially as a co-founder',
+];
+---
+
+<section
+  id="experience"
+  style="
+    padding: 5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  "
+>
+  <div style="margin-bottom: 3rem;">
+    <span class="section-label">Background</span>
+    <h2 style="
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      font-weight: 700;
+      margin: 0.5rem 0 0.75rem;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+    ">
+      Experience
+    </h2>
+    <p style="color: var(--color-muted); font-size: 1rem; margin: 0; max-width: 540px;">
+      Professional roles and education — built in parallel.
+    </p>
+  </div>
+
+  <!-- Legend -->
+  <div style="
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  ">
+    <span style="
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+    ">
+      <span style="width: 10px; height: 10px; border-radius: 50%; background: var(--color-accent); flex-shrink: 0;"></span>
+      Professional
+    </span>
+    <span style="
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+    ">
+      <span style="width: 10px; height: 10px; border-radius: 50%; background: var(--color-blue); flex-shrink: 0;"></span>
+      Education
+    </span>
+  </div>
+
+  <!-- Timeline -->
+  <div style="
+    position: relative;
+    padding-left: 2rem;
+    max-width: 720px;
+  ">
+    <!-- Vertical line -->
+    <div style="
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-border);
+    "></div>
+
+    {timelineOrder.map((item, idx) => (
+      <div style={`
+        position: relative;
+        padding-bottom: ${idx === timelineOrder.length - 1 ? '0' : '2.25rem'};
+      `}>
+        <!-- Dot -->
+        <div style={`
+          position: absolute;
+          left: -2rem;
+          top: 6px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: ${item.type === 'professional' ? 'var(--color-accent)' : 'var(--color-blue)'};
+          border: 2px solid var(--color-bg);
+          box-shadow: 0 0 0 2px ${item.type === 'professional' ? 'var(--color-accent)' : 'var(--color-blue)'};
+          margin-left: 1px;
+          flex-shrink: 0;
+        `}></div>
+
+        <div style="
+          background: var(--color-card);
+          border: 1px solid var(--color-border);
+          border-radius: 8px;
+          padding: 1.1rem 1.25rem;
+          transition: border-color 0.2s;
+        " class="timeline-item">
+          <div style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.4rem;
+          ">
+            <div>
+              <h3 style="
+                font-size: 0.95rem;
+                font-weight: 600;
+                color: var(--color-text);
+                margin: 0 0 0.15rem;
+              ">
+                {item.role}
+              </h3>
+              <p style="
+                font-size: 0.85rem;
+                color: var(--color-accent);
+                margin: 0;
+                font-weight: 500;
+              ">
+                {item.org}
+              </p>
+            </div>
+            <span style="
+              font-family: var(--font-mono);
+              font-size: 0.72rem;
+              color: var(--color-muted);
+              padding: 0.2rem 0.5rem;
+              background: rgba(42, 50, 68, 0.6);
+              border-radius: 4px;
+              white-space: nowrap;
+              flex-shrink: 0;
+            ">
+              {item.period}
+            </span>
+          </div>
+          <p style="
+            font-size: 0.82rem;
+            color: var(--color-muted);
+            margin: 0;
+            font-style: italic;
+          ">
+            {item.notes}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Callout chips -->
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 3rem;
+    max-width: 720px;
+  ">
+    {callouts.map((c) => (
+      <span style="
+        font-size: 0.8rem;
+        padding: 0.4rem 0.85rem;
+        background: var(--color-accent-dim);
+        border: 1px solid var(--color-accent-border);
+        border-radius: 20px;
+        color: var(--color-accent);
+        font-family: var(--font-mono);
+      ">
+        {c}
+      </span>
+    ))}
+  </div>
+</section>
+
+<style>
+  .timeline-item:hover {
+    border-color: rgba(0, 212, 170, 0.25) !important;
+  }
+</style>
