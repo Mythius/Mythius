@@ -14,7 +14,7 @@
 
 ## About
 
-I build full-stack systems end-to-end — from database schema design and backend APIs to frontend UIs, DevOps pipelines, and the Linux servers they run on. I co-founded **Admishn**, an admissions CRM sold to Davis School District. I currently build production software at **Mentors International**, deployed across multiple countries.
+I build full-stack systems end-to-end — from database schema design and backend APIs to frontend UIs, DevOps pipelines, and the Linux servers they run on. I co-founded **Admishn**, an admissions CRM made for Davis School District. I currently build production software at **Mentors International**, deployed across multiple countries.
 
 When I'm not at work, I'm self-hosting things I could pay someone else to host — because owning your stack is worth it.
 
