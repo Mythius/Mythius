@@ -41,7 +41,7 @@ When I'm not at work, I'm self-hosting things I could pay someone else to host �
 
 | Project | Description | Links |
 |---|---|---|
-| **Admishn** | Admissions CRM for schools — student tracking, mail merge, automated workflows. **Sold to Davis School District.** | [admishn.com](https://admishn.com) · `Commercial` |
+| **Admishn** | Admissions CRM for schools — student tracking, mail merge, automated workflows. **Built in partnership with Davis School District.** | [admishn.com](https://admishn.com) · `Commercial` |
 | **MatthiasTV** | Self-hosted video streaming with browser playback, a native Roku TV app (BrightScript), and an Electron desktop app. FFmpeg transcoding. Zero subscriptions. | [GitHub](https://github.com/Mythius/videostream) |
 | **Mentors Global Reports** | Reporting dashboard with Google Docs–style editing and role-based permissions. In production across multiple countries. | [reports.mentorsglobal.org](https://reports.mentorsglobal.org) · `Private` |
 | **PixelAI** | Unified platform for image processing, AI model training, and AI image generation — the full pipeline in one place. | [pixelai.msouthwick.com](https://pixelai.msouthwick.com) |
@@ -115,7 +115,7 @@ When I'm not at work, I'm self-hosting things I could pay someone else to host �
 
 ```
 Apr 2025 – Present   Co-Founder & Software Engineer   Admishn Software
-                     Built and sold an admissions CRM to Davis School District
+                     Built an admissions CRM for Davis School District
 
 Jan 2024 – Present   Software Engineer                Mentors International
                      8+ full-stack tools, AWS, production Linux, multi-country deployment

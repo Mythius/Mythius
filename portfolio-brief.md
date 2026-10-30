@@ -44,11 +44,11 @@ Each project card must display: title, description, tags (chips), GitHub link, l
 ---
 
 **Admishn — Admissions CRM**
-- **Description:** Web platform for schools to manage student applications end-to-end, with real-time student progress tracking, built-in mail merge, and automated email workflows. Sold to Davis School District.
+- **Description:** Web platform for schools to manage student applications end-to-end, with real-time student progress tracking, built-in mail merge, and automated email workflows. Built in partnership with Davis School District.
 - **Live:** https://admishn.com
 - **GitHub:** (private — note as "Commercial")
 - **Tags:** `SaaS` `CRM` `Mail Merge` `Automated Emails` `PostgreSQL` `Node.js` `React` `Co-Founded`
-- **Highlight badge:** ⭐ Sold to Davis School District
+- **Highlight badge:** ⭐ Built in partnership with Davis School District
 
 ---
 
@@ -196,7 +196,7 @@ Each project card must display: title, description, tags (chips), GitHub link, l
 
 | Period | Role | Organization | Notes |
 |---|---|---|---|
-| Apr 2025–Present | Co-Founder & Software Engineer | Admishn Software | Sold to Davis School District |
+| Apr 2025–Present | Co-Founder & Software Engineer | Admishn Software | Built in partnership with Davis School District |
 | Jan 2024–Present | Software Engineer | Mentors International | 8+ full-stack tools, AWS, production Linux |
 | Apr 2023–Jan 2024 | Data Analyst | Weber State University | Advanced SQL, Tableau, open-source data viz |
 | Aug 2024–Apr 2026 | B.S. Computer Science | Brigham Young University | Current student |
@@ -206,7 +206,7 @@ Each project card must display: title, description, tags (chips), GitHub link, l
 - Manages production Linux servers + AWS infrastructure (Fargate, ECS, Docker, NGINX)
 - Designed and migrated a production database for a large multi-country system
 - Set up SCRUM/Agile on a remote international team (bilingual English/Spanish)
-- Sold software commercially as a co-founder
+- Lauched a startup company
 
 ---
 
@@ -281,7 +281,7 @@ Structure all project data as a JSON array at the top of the file for easy editi
 
 ## Notes for Claude Code
 
-- Surface "Sold to Davis School District" early — it's the single strongest credibility signal (it is pending right now though)
+- Surface "Built in partnership with Davis School District" early — it's the single strongest credibility signal (it is pending right now though)
 - The Chess C++ bot deserves a "wait, C++?" moment — most web devs never go near it
 - The Online Explorer is a great quiet flex: built because he wanted it, not for a class
 - The TemplateWebsites / Google Sheets CMS is a meta-story worth a callout: "I manage my own sites with my own tools"
