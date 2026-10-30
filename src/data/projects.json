@@ -2,14 +2,14 @@
   {
     "id": "admishn",
     "title": "Admishn — Admissions CRM",
-    "description": "Web platform for schools to manage student applications end-to-end, with real-time student progress tracking, built-in mail merge, and automated email workflows. Sold to Davis School District.",
+    "description": "Web platform for schools to manage student applications end-to-end, with real-time student progress tracking, built-in mail merge, and automated email workflows. Built in partnership Davis School District.",
     "category": "platform",
     "tags": ["SaaS", "CRM", "Mail Merge", "Automated Emails", "PostgreSQL", "Node.js", "React", "Co-Founded"],
     "github": null,
     "githubLabel": "Commercial",
     "live": "https://admishn.com",
     "featured": true,
-    "highlight": "⭐ Sold to Davis School District"
+    "highlight": "⭐ Built in partnership with Davis School District"
   },
   {
     "id": "videostream",
